@@ -16,14 +16,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.rocketseat.ignitern09iweatherdeploy"
+      "bundleIdentifier": "com.natanaelvich.iweather"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#13131A"
       },
-      "package": "com.rocketseat.ignite_rn_09_iwaether_deploy"
+      "package": "com.natanaelvich.iweather"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -33,14 +33,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "96c3eed4-e082-46a0-ae5f-ec2aa04ab943"
+        "projectId": "7f537c92-772b-4144-be7b-adc3251ee257"
       }
     },
-    "runtimeVersion": {
-      "policy": "sdkVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/96c3eed4-e082-46a0-ae5f-ec2aa04ab943"
-    }
+    "owner": "natanaelvich"
   }
 }

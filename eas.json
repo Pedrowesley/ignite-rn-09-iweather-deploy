@@ -1,43 +1,26 @@
 {
   "cli": {
-    "version": ">= 3.17.1",
-    "appVersionSource": "remote"
+    "version": ">= 4.1.2"
   },
   "build": {
-    "preview": {
-      "autoIncrement": true,
-      "android": {
-        "distribution": "internal",
-        "autoIncrement": "versionCode"
-      },
-      "ios": {
-        "simulator": true,
-        "autoIncrement": "buildNumber"
-      },
-      "channel": "preview"
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
     },
-    "production": {
-      "autoIncrement": true,
-      "android": {
-        "autoIncrement": "versionCode"
-      },
+    "preview": {
+      "distribution": "internal",
+      "config": "test.yml",
+      "withoutCredentials": true,
       "ios": {
-        "image": "latest",
-        "autoIncrement": "buildNumber"
+        "simulator": true
       },
-      "channel": "production"
-    }
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {}
   },
   "submit": {
-    "preview": {
-      "android": {
-        "track": "internal",
-        // "servicesAccountKeyPath": "google-services.json",
-        "releaseStatus": "draft"
-      },
-      "ios": {
-        "appleId": "rennan.douglas@rocketseat.team"
-      }
-    }
+    "production": {}
   }
 }
